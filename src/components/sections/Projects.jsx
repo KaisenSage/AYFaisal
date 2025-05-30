@@ -50,7 +50,7 @@ export const Projects = () => {
             <video
               controls
               className="w-full max-w-xl rounded shadow-lg mb-4 md:mb-0"
-              src="/Silent%20Pursit%20Part%201.mp4"
+              src="/Silent Pursuit.mp4"
               poster="/thumbnails/silent-pursuit.jpg"
             >
               Sorry, your browser doesn't support embedded videos.
