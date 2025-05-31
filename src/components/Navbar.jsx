@@ -7,7 +7,10 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#ECCEC6] border-b border-white/10 shadow-lg">
+    <nav
+      className="fixed top-0 w-full z-50 bg-[#ECCEC6] border-b border-[#e3c2b6] shadow-md"
+      style={{ transition: "box-shadow 0.2s" }}
+    >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-8 h-16">
         <a href="#home" className="flex items-center">
           <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />

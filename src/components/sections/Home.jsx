@@ -5,7 +5,8 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row bg-[#ECCEC6] pt-20 md:pt-0"
+      className="min-h-screen flex flex-col md:flex-row bg-[#ECCEC6] pt-16 md:pt-0 transition-colors"
+      // pt-16 = height of navbar (h-16), so content starts just below nav
     >
       {/* Image on top for mobile, left for desktop */}
       <div className="w-full md:w-1/2 flex-shrink-0 h-64 xs:h-80 sm:h-96 md:h-auto">
