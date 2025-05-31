@@ -7,48 +7,31 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav
-      className="fixed top-0 w-full z-50 bg-[#ECCEC6] border-b border-[#e3c2b6] shadow-md"
-      style={{ transition: "box-shadow 0.2s" }}
-    >
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-8 h-16">
-        <a href="#home" className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
-        </a>
-        {/* Hamburger */}
-        <button
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 z-50"
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle menu"
-        >
-          <span className={`block w-7 h-0.5 bg-gray-800 mb-1.5 transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-          <span className={`block w-7 h-0.5 bg-gray-800 mb-1.5 transition-all ${menuOpen ? "opacity-0" : ""}`}></span>
-          <span className={`block w-7 h-0.5 bg-gray-800 transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
-        </button>
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-gray-800 font-medium hover:text-black transition-colors">Home</a>
-          <a href="#about" className="text-gray-800 font-medium hover:text-black transition-colors">About</a>
-          <a href="#projects" className="text-gray-800 font-medium hover:text-black transition-colors">Projects</a>
-          <a href="#contact" className="text-gray-800 font-medium hover:text-black transition-colors">Contact</a>
+    <nav className="fixed top-0 w-full z-40 bg-[#ECCEC6] border-b border-white/10 shadow-lg">
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <a href="#home" className="flex items-center space-x-2">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-8 w-auto object-contain"
+            />
+          </a>
+
+          <div
+            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            &#9776;
+          </div>
+
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#home" className="text-gray-800 hover:text-black transition-colors">Home</a>
+            <a href="#about" className="text-gray-800 hover:text-black transition-colors">About</a>
+            <a href="#projects" className="text-gray-800 hover:text-black transition-colors">Projects</a>
+            <a href="#contact" className="text-gray-800 hover:text-black transition-colors">Contact</a>
+          </div>
         </div>
-      </div>
-      {/* Mobile Menu Overlay */}
-      <div
-        className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-300 ${menuOpen ? "block md:hidden opacity-100" : "hidden opacity-0"}`}
-        onClick={() => setMenuOpen(false)}
-        aria-hidden="true"
-      />
-      {/* Mobile Slide Menu */}
-      <div
-        className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-[#ECCEC6] shadow-lg z-50 transition-transform duration-300 flex flex-col pt-24 px-6 space-y-8 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
-      >
-        <a href="#home" className="text-gray-800 text-xl font-semibold" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#about" className="text-gray-800 text-xl font-semibold" onClick={() => setMenuOpen(false)}>About</a>
-        <a href="#projects" className="text-gray-800 text-xl font-semibold" onClick={() => setMenuOpen(false)}>Projects</a>
-        <a href="#contact" className="text-gray-800 text-xl font-semibold" onClick={() => setMenuOpen(false)}>Contact</a>
       </div>
     </nav>
   );
