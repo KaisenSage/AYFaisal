@@ -83,7 +83,7 @@ export const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Watch here
+              WATCH HERE
             </a>
             <h3 className="text-4xl font-extrabold text-white mb-4 text-center">
               DOCUMENTARY
@@ -146,7 +146,7 @@ export const Projects = () => {
 
         {/* COMMERCIALS SECTION */}
         <div className="w-full bg-[#232323] rounded-xl py-12 px-4 sm:px-8 mb-20 flex flex-col items-center">
-          <h2 className="text-5xl font-extrabold text-white mb-4 text-center">
+          <h2 className="text-4xl font-extrabold text-white mb-4 text-center">
             COMMERCIALS
           </h2>
           <h3
@@ -227,7 +227,7 @@ export const Projects = () => {
         </div>
         {/* FILMS SECTION */}
         <div className="w-full bg-[#e9d7d2] rounded-xl py-12 px-4 sm:px-8 mb-4">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-center text-black mb-8 opacity-90">
+          <h2 className="text-5xl sm:text-5xl font-extrabold text-center text-black mb-8 opacity-90">
             FILMS
           </h2>
           <div className="flex flex-col items-center">
