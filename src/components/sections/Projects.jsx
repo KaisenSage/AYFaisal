@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { RevealOnScroll } from "../RevealOnScroll";
+
 // Be sure to import the Major Mono Display font in your project for the font to work properly.
 // Example: in your index.html <head>:
 // <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet" />
@@ -41,7 +41,7 @@ export const Projects = () => {
       className="min-h-screen flex flex-col items-center justify-center py-20 bg-[#e9d7d2]"
       ref={containerRef}
     >
-      <RevealOnScroll>
+
       <div className="w-full max-w-6xl mx-auto px-4">
         {/* FILM - LATEST WORK */}
         <div className="flex flex-col md:flex-row items-center mb-20">
@@ -253,7 +253,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      </RevealOnScroll>
+ 
     </section>
   );
 };
