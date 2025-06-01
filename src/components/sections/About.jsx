@@ -1,27 +1,27 @@
+import React from "react";
 
 export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col items-start py-20 bg-[#232323]" // changed items-center to items-start and removed justify-center
+      className="min-h-screen w-screen flex flex-col items-center py-16 bg-[#232323]"
     >
-    
-      <div className="w-full max-w-3xl mx-auto px-4">
+      <div className="w-full max-w-4xl px-4 sm:px-8 mx-auto">
         {/* BIO SECTION */}
-        <div className="flex flex-col md:flex-row border-t border-gray-500 pt-8 pb-8">
+        <div className="flex flex-col md:flex-row border-t border-gray-600 pt-8 pb-8">
           <div className="md:w-1/3 font-bold text-lg text-white mb-4 md:mb-0 md:pr-8">
             BIO
           </div>
-          <div className="md:w-2/3 text-gray-100 text-left"> {/* added text-left */}
+          <div className="md:w-2/3 text-gray-100 text-left">
             I’m a passionate filmmaker and cinematographer with professional experience in both Nigeria and the U.S., having worked with Affadotstudios in Lagos and Amerifilms in Dayton, Ohio. My roles as director, camera operator, and cinematographer have allowed me to lead creative teams and bring compelling stories to life, both on set and behind the scenes.
           </div>
         </div>
         {/* WHAT I OFFER SECTION */}
-        <div className="flex flex-col md:flex-row border-t border-gray-500 pt-8 pb-8">
+        <div className="flex flex-col md:flex-row border-t border-gray-600 pt-8 pb-8">
           <div className="md:w-1/3 font-bold text-lg text-white mb-4 md:mb-0 md:pr-8">
             <span className="tracking-wide">WHAT I OFFER</span>
           </div>
-          <div className="md:w-2/3 text-gray-100 text-left"> {/* added text-left */}
+          <div className="md:w-2/3 text-gray-100 text-left">
             As a filmmaker and cinematographer with cross-cultural experience in both Nigeria and the U.S., I approach every project with a strong visual sensibility and a deep commitment to storytelling. Whether I'm directing a scene, operating the camera, or overseeing cinematography, I prioritize authenticity, emotion, and clarity of vision. My time with Affadotstudios in Lagos and Amerifilms in Dayton, Ohio has shaped my ability to adapt to diverse creative environments, lead collaborative teams, and translate ideas into powerful visual narratives. I believe in the power of film to connect, inspire, and provoke thought—and I strive to bring that energy to every frame.
           </div>
         </div>
@@ -29,8 +29,7 @@ export const About = () => {
 
       {/* EDUCATION SECTION - edge to edge background */}
       <div className="w-full bg-[#eccec6] mt-12 py-12">
-        <div className="max-w-3xl mx-auto px-4">
-          {/* Education Heading */}
+        <div className="w-full max-w-4xl px-4 sm:px-8 mx-auto">
           <div className="mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
               Education
@@ -70,7 +69,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 };
