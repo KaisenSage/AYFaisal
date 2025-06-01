@@ -45,7 +45,7 @@ export const Projects = () => {
         {/* FILM - LATEST WORK */}
         <div className="flex flex-col md:flex-row items-center mb-20 gap-10 md:gap-0">
           <div className="md:w-1/2 flex flex-col items-center md:items-start">
-            <h3 className="text-3xl font-bold text-black mb-4 text-center md:text-left">SILENT PURSUIT</h3>
+            <h3 className="text-3xl font-bold text-black mb-4 text-center md:text-left">LATEST WORK</h3>
             <video
               controls
               className="w-full max-w-xl rounded shadow-lg mb-4 md:mb-0"
@@ -56,7 +56,7 @@ export const Projects = () => {
             </video>
           </div>
           <div className="md:w-1/2 md:pl-12 flex flex-col justify-center items-center md:items-start">
-            <h2 className="text-4xl font-extrabold mb-4 text-black text-center md:text-left">LATEST WORK</h2>
+            <h2 className="text-4xl font-extrabold mb-4 text-black text-center md:text-left">SILENT PURSUIT</h2>
             <p className="text-lg text-black mb-6 text-center md:text-left">
               “Silent Pursuit” In the midst of a vibrant, chaotic street market, Maria, a trafficked woman, makes a desperate escape from her captors. As she weaves through alleys and crowds, a relentless pursuer closes in, triggering a tense and silent chase. With only her instincts and courage to rely on, Maria must outmaneuver danger in a high-stakes fight for freedom, one that could mean liberation or recapture.
             </p>
@@ -85,7 +85,7 @@ export const Projects = () => {
             >
               Watch here
             </a>
-            <h3 className="text-3xl font-extrabold text-white mb-4 text-center">
+            <h3 className="text-5xl font-extrabold text-white mb-4 text-center">
               DOCUMENTARY
             </h3>
           </div>
@@ -115,7 +115,7 @@ export const Projects = () => {
               <video
                 controls
                 className="w-full rounded shadow-lg mb-2"
-                src="https://pub-3009ba38fd504b0796168c30789aa113.r2.dev/media%20ayfaisal/STRAIGHT%20FROM%20MY%20HEART.mp4"
+                src="https://pub-3009ba38fd504b0796168c30789aa113.r2.dev/STRAIGHT%20FROM%20MY%20HEART.mp4"
                 poster="/thumbnails/straight-for-my-heart.jpg"
               >
                 Sorry, your browser doesn't support embedded videos.
@@ -146,7 +146,7 @@ export const Projects = () => {
 
         {/* COMMERCIALS SECTION */}
         <div className="w-full bg-[#232323] rounded-xl py-12 px-4 sm:px-8 mb-20">
-          <h2 className="text-3xl font-extrabold text-white mb-4 text-center md:text-left">
+          <h2 className="text-5xl font-extrabold text-white mb-4 text-center md:text-left">
             COMMERCIALS
           </h2>
           <div className="flex flex-col md:flex-row items-center md:items-start">
@@ -220,7 +220,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Watch here
+                WATCH HERE
               </a>
             </div>
           </div>
@@ -247,7 +247,7 @@ export const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Watch here
+              WATCH HERE
             </a>
             <p className="text-black text-lg max-w-2xl text-center">
               Detective Mark engages in a tense phone call with the manipulative serial killer, Carter, who reveals his next murder. As the mind games escalate, Mark races against time to stop Carter, but with each chilling revelation, the killer remains one step ahead, pushing Mark to his breaking point.

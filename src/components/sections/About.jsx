@@ -13,7 +13,7 @@ export const About = () => {
             BIO
           </div>
           <div className="md:w-2/3 text-gray-100 text-left">
-            I’m a passionate filmmaker and cinematographer with professional experience in both Nigeria and the U.S., having worked with Affadotstudios in Lagos and Amerifilms in Dayton, Ohio. My roles as director, camera operator, and cinematographer have allowed me to lead creative teams and bring compelling stories to life, both on set and behind the scenes.
+            I'm a driven film maker and camera lead with real work in both Nigeria and the U.S. I've worked with Affadotstudios in Lagos and Amerifilms in Dayton, Ohio. As a director, camera hand, and lead on set, I guide teams and shape strong stories from start to screen.
           </div>
         </div>
         {/* WHAT I OFFER SECTION */}
