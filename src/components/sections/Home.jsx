@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center  bg-[#ECCEC6] overflow-hidden"
+      className="min-h-screen flex flex-col md:flex-row bg-[#ECCEC6] overflow-hidden"
     >
       {/* Left Half - Image */}
       <div className="w-full md:w-1/2 h-[400px] md:h-auto">
