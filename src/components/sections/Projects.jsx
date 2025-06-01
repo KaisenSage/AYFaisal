@@ -146,7 +146,7 @@ export const Projects = () => {
 
         {/* COMMERCIALS SECTION */}
         <div className="w-full bg-[#232323] rounded-xl py-12 px-6 mb-20">
-          <h2 className="text-5xl font-extrabold text-white mb-10">
+          <h2 className="text-3xl font-extrabold text-white mb-4"> 
             COMMERCIALS
           </h2>
           <div className="flex flex-col md:flex-row items-center">
