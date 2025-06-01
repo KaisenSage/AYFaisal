@@ -1,6 +1,6 @@
 import React from "react";
 import portrait from "../../assets/portrait.jpeg";
-import { RevealOnScroll } from "../RevealOnScroll";
+
 export const Home = () => {
   return (
     <section
@@ -9,7 +9,7 @@ export const Home = () => {
       className="min-h-screen pt-16 w-full flex flex-col md:flex-row bg-[#ECCEC6] overflow-hidden"
       style={{ minHeight: "100vh" }}
     >
-      <RevealOnScroll>
+      
       {/* Left Half - Image */}
       <div className="w-full md:w-1/2 h-[400px] md:h-screen flex items-center justify-center bg-[#ECCEC6]">
         <img
@@ -47,7 +47,7 @@ export const Home = () => {
           </a>
         </div>
       </div>
-      </RevealOnScroll>
+      
     </section>
   );
 };
