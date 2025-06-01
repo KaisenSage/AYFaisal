@@ -38,15 +38,14 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col items-center justify-center py-20 bg-[#e9d7d2]"
+      className="min-h-screen w-screen flex flex-col items-center justify-center py-16 bg-[#e9d7d2]"
       ref={containerRef}
     >
-
-      <div className="w-full max-w-6xl mx-auto px-4">
+      <div className="w-full max-w-6xl px-4 sm:px-8 mx-auto">
         {/* FILM - LATEST WORK */}
-        <div className="flex flex-col md:flex-row items-center mb-20">
-          <div className="md:w-1/2 flex flex-col items-start">
-            <h3 className="text-3xl font-bold text-black mb-4">SILENT PURSUIT</h3>
+        <div className="flex flex-col md:flex-row items-center mb-20 gap-10 md:gap-0">
+          <div className="md:w-1/2 flex flex-col items-center md:items-start">
+            <h3 className="text-3xl font-bold text-black mb-4 text-center md:text-left">SILENT PURSUIT</h3>
             <video
               controls
               className="w-full max-w-xl rounded shadow-lg mb-4 md:mb-0"
@@ -56,18 +55,18 @@ export const Projects = () => {
               Sorry, your browser doesn't support embedded videos.
             </video>
           </div>
-          <div className="md:w-1/2 md:pl-12 flex flex-col justify-center">
-            <h2 className="text-4xl font-extrabold mb-4 text-black">LATEST WORK</h2>
-            <p className="text-lg text-black mb-6">
+          <div className="md:w-1/2 md:pl-12 flex flex-col justify-center items-center md:items-start">
+            <h2 className="text-4xl font-extrabold mb-4 text-black text-center md:text-left">LATEST WORK</h2>
+            <p className="text-lg text-black mb-6 text-center md:text-left">
               “Silent Pursuit” In the midst of a vibrant, chaotic street market, Maria, a trafficked woman, makes a desperate escape from her captors. As she weaves through alleys and crowds, a relentless pursuer closes in, triggering a tense and silent chase. With only her instincts and courage to rely on, Maria must outmaneuver danger in a high-stakes fight for freedom, one that could mean liberation or recapture.
             </p>
           </div>
         </div>
 
         {/* DOCUMENTARY SECTION */}
-        <div className="w-full bg-[#232323] rounded-xl py-12 px-6 mb-20">
+        <div className="w-full bg-[#232323] rounded-xl py-12 px-4 sm:px-8 mb-20">
           <div className="w-full max-w-4xl mx-auto flex flex-col items-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-left w-full">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center w-full">
               The reality of an international student in the United States...
             </h2>
             <video
@@ -86,16 +85,16 @@ export const Projects = () => {
             >
               Watch here
             </a>
-            <h3 className="text-3xl font-extrabold text-white mb-4">
+            <h3 className="text-3xl font-extrabold text-white mb-4 text-center">
               DOCUMENTARY
             </h3>
           </div>
         </div>
 
         {/* MUSIC VIDEOS SECTION */}
-        <div className="w-full bg-[#232323] rounded-xl py-12 px-6 mb-20">
+        <div className="w-full bg-[#232323] rounded-xl py-12 px-4 sm:px-8 mb-20">
           <h2
-            className="text-5xl font-extrabold mb-10"
+            className="text-4xl sm:text-5xl font-extrabold mb-10 text-center"
             style={{
               background: "linear-gradient(90deg, #fff 60%, #e9d7d2 100%)",
               WebkitBackgroundClip: "text",
@@ -107,10 +106,10 @@ export const Projects = () => {
             VID
             <span style={{ color: "#eccec6", WebkitTextFillColor: "#eccec6", background: "none" }}>EOS</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Music Video 1 */}
             <div>
-              <p className="text-xl font-semibold text-white mb-2">
+              <p className="text-xl font-semibold text-white mb-2 text-center md:text-left">
                 Straight for My Heart – Blackdutch (Cover)
               </p>
               <video
@@ -121,13 +120,13 @@ export const Projects = () => {
               >
                 Sorry, your browser doesn't support embedded videos.
               </video>
-              <p className="text-white">
+              <p className="text-white text-center md:text-left">
                 Directed and shot a moody visual for Blackdutch’s cover, using closeups and movement to emphasize emotion and performance.
               </p>
             </div>
             {/* Music Video 2 */}
             <div>
-              <p className="text-xl font-semibold text-white mb-2">
+              <p className="text-xl font-semibold text-white mb-2 text-center md:text-left">
                 Reclaim – Jomal (Acappella Performance)
               </p>
               <video
@@ -138,7 +137,7 @@ export const Projects = () => {
               >
                 Sorry, your browser doesn't support embedded videos.
               </video>
-              <p className="text-white">
+              <p className="text-white text-center md:text-left">
                 Filmed and edited a minimalist one-take performance to spotlight Jomal’s raw vocals and lyrical intensity.
               </p>
             </div>
@@ -146,12 +145,12 @@ export const Projects = () => {
         </div>
 
         {/* COMMERCIALS SECTION */}
-        <div className="w-full bg-[#232323] rounded-xl py-12 px-6 mb-20">
-          <h2 className="text-3xl font-extrabold text-white mb-4"> 
+        <div className="w-full bg-[#232323] rounded-xl py-12 px-4 sm:px-8 mb-20">
+          <h2 className="text-3xl font-extrabold text-white mb-4 text-center md:text-left">
             COMMERCIALS
           </h2>
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 flex flex-col justify-center mb-6 md:mb-0">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
+            <div className="md:w-1/2 flex flex-col justify-center items-center md:items-start mb-6 md:mb-0">
               <h3
                 style={{
                   fontFamily: "'Major Mono Display', monospace",
@@ -161,30 +160,31 @@ export const Projects = () => {
                   color: "#eccec6",
                   lineHeight: 1.2,
                   marginBottom: "2rem",
-                  textAlign: "left",
+                  textAlign: "center",
                   textTransform: "uppercase"
                 }}
+                className="w-full"
               >
                 <span style={{ fontWeight: 700 }}>S</span>wiss Miss
                 <br />
                 <span style={{ fontWeight: 700 }}>C</span>hocolate △dvert
               </h3>
             </div>
-            <div className="md:w-1/2 md:pl-12 flex flex-col justify-center">
+            <div className="md:w-1/2 md:pl-12 flex flex-col justify-center items-center md:items-start">
               <img
                 src="/thumbnails/swiss-miss-commercial.jpg"
                 alt="Swiss Miss Chocolate Advert poster"
-                className="rounded shadow-lg max-w-md mb-4"
+                className="rounded shadow-lg w-full max-w-md mb-4"
               />
               <a
                 href="https://youtu.be/ojR9dJPYAYo?si=40xpl-kvAFEsqj0m"
-                className="text-lg font-bold underline text-white hover:text-[#e9d7d2] mb-8 block"
+                className="text-lg font-bold underline text-white hover:text-[#e9d7d2] mb-8 block text-center md:text-left"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 CLICK HERE
               </a>
-              <p className="text-white text-lg">
+              <p className="text-white text-lg text-center md:text-left">
                 Directed and shot a cozy, feel-good commercial capturing the warmth and comfort of Swiss Miss hot chocolate, styled for seasonal appeal.
               </p>
             </div>
@@ -192,29 +192,31 @@ export const Projects = () => {
         </div>
 
         {/* PODCAST SECTION */}
-        <div className="w-full bg-[#fae4db] rounded-xl py-12 px-6 mb-20">
-          <h2 className="text-5xl font-extrabold text-black mb-10">PODCAST</h2>
-          <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full bg-[#fae4db] rounded-xl py-12 px-4 sm:px-8 mb-20">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-black mb-10 text-center">
+            PODCAST
+          </h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
               <video
                 controls
-                className="rounded shadow-lg max-w-md"
+                className="rounded shadow-lg w-full max-w-md"
                 src="https://pub-3009ba38fd504b0796168c30789aa113.r2.dev/media%20ayfaisal/PODCAST.mp4"
                 poster="/thumbnails/deep-dive-podcast.jpg"
               >
                 Sorry, your browser doesn't support embedded videos.
               </video>
             </div>
-            <div className="md:w-1/2 md:pl-12 flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-black mb-2">
+            <div className="md:w-1/2 md:pl-12 flex flex-col justify-center items-center md:items-start">
+              <h3 className="text-2xl font-bold text-black mb-2 text-center md:text-left">
                 DEEP DIVE PODCAST
               </h3>
-              <p className="text-black text-lg">
+              <p className="text-black text-lg text-center md:text-left">
                 Directed and served as cinematographer for this visually engaging podcast series, focusing on clean, dynamic setups that complement in-depth conversations and storytelling.
               </p>
               <a
                 href="https://youtu.be/0-SPtfOEVjg?si=Pfed72abdX5qMWDa"
-                className="text-lg font-bold underline text-black hover:text-[#232323] mt-4"
+                className="text-lg font-bold underline text-black hover:text-[#232323] mt-4 text-center md:text-left"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -225,12 +227,12 @@ export const Projects = () => {
         </div>
 
         {/* FILMS SECTION */}
-        <div className="w-full bg-[#e9d7d2] rounded-xl py-12 px-6 mb-4">
-          <h2 className="text-5xl font-extrabold text-center text-black mb-8 opacity-90">
+        <div className="w-full bg-[#e9d7d2] rounded-xl py-12 px-4 sm:px-8 mb-4">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-center text-black mb-8 opacity-90">
             FILMS
           </h2>
           <div className="flex flex-col items-center">
-            <h3 className="text-3xl font-extrabold text-black mb-4">“The Caller”</h3>
+            <h3 className="text-3xl font-extrabold text-black mb-4 text-center">“The Caller”</h3>
             <video
               controls
               className="w-full max-w-xl rounded shadow-lg mb-4"
@@ -241,7 +243,7 @@ export const Projects = () => {
             </video>
             <a
               href="https://youtu.be/-VYWNQFtTXU?si=iy-PWkkzf1qWirDr"
-              className="text-lg font-bold underline text-black  mb-6"
+              className="text-lg font-bold underline text-black  mb-6 text-center"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -253,7 +255,6 @@ export const Projects = () => {
           </div>
         </div>
       </div>
- 
     </section>
   );
 };
