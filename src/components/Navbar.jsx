@@ -1,5 +1,5 @@
 import React from "react";
-import portrait from "../../assets/portrait.jpeg";
+
 
 export const Home = () => {
   return (
