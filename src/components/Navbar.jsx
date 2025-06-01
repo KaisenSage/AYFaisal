@@ -8,7 +8,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <nav className="fixed top-0 w-full z-40 bg-[#ECCEC6] border-b border-white/10 shadow-lg">
-      <div className="w-full px-4">
+      <div className="w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="flex items-center space-x-2">
             <img
@@ -18,24 +18,42 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             />
           </a>
 
-          {/* Hamburger button */}
-          <button
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+          <div
+            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
-            aria-label="Open menu"
-            type="button"
           >
-            <span className="block w-7 h-0.5 bg-gray-800 mb-1 rounded"></span>
-            <span className="block w-7 h-0.5 bg-gray-800 mb-1 rounded"></span>
-            <span className="block w-7 h-0.5 bg-gray-800 rounded"></span>
-          </button>
+            &#9776;
+          </div>
 
-          {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-800 hover:text-black transition-colors">Home</a>
-            <a href="#about" className="text-gray-800 hover:text-black transition-colors">About</a>
-            <a href="#projects" className="text-gray-800 hover:text-black transition-colors">Projects</a>
-            <a href="#contact" className="text-gray-800 hover:text-black transition-colors">Contact</a>
+            <a
+             href="#home"
+             className="text-gray-800 hover:text-black transition-colors"
+             >
+              {""}
+              Home
+            </a>
+            <a 
+              href="#about" 
+              className="text-gray-800 hover:text-black transition-colors"
+            >
+               {""}
+                About{""}
+            </a>
+            <a 
+            href="#projects" 
+            className="text-gray-800 hover:text-black transition-colors"
+            >
+              {""}
+              Projects{""}
+            </a>
+            <a 
+            href="#contact"
+            className="text-gray-800 hover:text-black transition-colors"
+            >
+              {""}
+              Contact{""}
+            </a>
           </div>
         </div>
       </div>
