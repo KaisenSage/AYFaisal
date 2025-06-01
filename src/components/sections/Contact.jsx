@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-
+import { RevealOnScroll } from "../RevealOnScroll";
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -31,6 +31,7 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
       style={{ backgroundColor: "#232323" }} // Now dark grey
     >
+      <RevealOnScroll>
       <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
         <h2
           className="text-3xl font-bold mb-8 text-center"
@@ -120,6 +121,7 @@ export const Contact = () => {
           </button>
         </form>
       </div>
+      </RevealOnScroll>
     </section>
   );
 };

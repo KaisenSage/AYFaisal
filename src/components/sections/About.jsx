@@ -1,9 +1,11 @@
+import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
   return (
     <section
       id="about"
       className="min-h-screen flex flex-col items-start py-20 bg-[#232323]" // changed items-center to items-start and removed justify-center
     >
+      <RevealOnScroll>
       <div className="w-full max-w-3xl mx-auto px-4">
         {/* BIO SECTION */}
         <div className="flex flex-col md:flex-row border-t border-gray-500 pt-8 pb-8">
@@ -68,6 +70,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      </RevealOnScroll>
     </section>
   );
 };
