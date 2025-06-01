@@ -5,10 +5,11 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row bg-[#ECCEC6] overflow-hidden"
+      // Add pt-16 to offset the fixed navbar (h-16 = 64px)
+      className="min-h-screen pt-16 flex flex-col md:flex-row bg-[#ECCEC6] overflow-hidden"
     >
       {/* Left Half - Image */}
-      <div className="w-full md:w-1/2 h-[400px] md:h-auto">
+      <div className="w-full md:w-1/2 h-64 md:h-auto">
         <img
           src={portrait}
           alt="Faisal Abdulkarim"
@@ -28,16 +29,16 @@ export const Home = () => {
           FILM MAKER <br /> CINEMATOGRAPHER
         </h2>
 
-        <div className="flex space-x-4">
+        <div className="flex flex-col xs:flex-row gap-4 w-full max-w-xs xs:max-w-none items-center md:items-start">
           <a
             href="#projects"
-            className="border border-black text-black py-3 px-6 rounded font-medium transition duration-300 transform hover:scale-105 hover:bg-black hover:text-[#ECCEC6]"
+            className="w-full xs:w-auto border border-black text-black py-3 px-6 rounded font-medium transition duration-300 transform hover:scale-105 hover:bg-black hover:text-[#ECCEC6] text-center"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="border border-black text-black py-3 px-6 rounded font-medium transition duration-300 transform hover:scale-105 hover:bg-black hover:text-[#ECCEC6]"
+            className="w-full xs:w-auto border border-black text-black py-3 px-6 rounded font-medium transition duration-300 transform hover:scale-105 hover:bg-black hover:text-[#ECCEC6] text-center"
           >
             Contact Me
           </a>

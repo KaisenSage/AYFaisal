@@ -85,7 +85,7 @@ export const Projects = () => {
             >
               Watch here
             </a>
-            <h3 className="text-5xl font-extrabold text-white text-right opacity-80 w-full">
+            <h3 className="text-3xl font-extrabold text-white mb-4">
               DOCUMENTARY
             </h3>
           </div>
