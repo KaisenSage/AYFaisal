@@ -5,7 +5,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
-
   return (
     <nav className="fixed top-0 w-full z-40 bg-[#ECCEC6] border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
@@ -26,10 +25,34 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-800 hover:text-black transition-colors">Home</a>
-            <a href="#about" className="text-gray-800 hover:text-black transition-colors">About</a>
-            <a href="#projects" className="text-gray-800 hover:text-black transition-colors">Projects</a>
-            <a href="#contact" className="text-gray-800 hover:text-black transition-colors">Contact</a>
+            <a
+             href="#home"
+             className="text-gray-800 hover:text-black transition-colors"
+             >
+              {""}
+              Home
+            </a>
+            <a 
+              href="#about" 
+              className="text-gray-800 hover:text-black transition-colors"
+            >
+               {""}
+                About{""}
+            </a>
+            <a 
+            href="#projects" 
+            className="text-gray-800 hover:text-black transition-colors"
+            >
+              {""}
+              Projects{""}
+            </a>
+            <a 
+             href="#contact"
+             className="text-gray-800 hover:text-black transition-colors"
+            >
+              {""}
+              Contact{""}
+            </a>
           </div>
         </div>
       </div>
