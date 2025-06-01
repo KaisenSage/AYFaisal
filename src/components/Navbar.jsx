@@ -1,62 +1,49 @@
-import { useEffect } from "react";
-import logo from "../assets/logo.jpeg";
+import React from "react";
+import portrait from "../../assets/portrait.jpeg";
 
-export const Navbar = ({ menuOpen, setMenuOpen }) => {
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
-  }, [menuOpen]);
-
+export const Home = () => {
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[#ECCEC6] border-b border-white/10 shadow-lg">
-      <div className="w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <a href="#home" className="flex items-center space-x-2">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-8 w-auto object-contain"
-            />
-          </a>
+    <section
+      id="home"
+      className="relative min-h-screen w-screen flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
+      style={{ minHeight: "100vh" }}
+    >
+      {/* Left - Image, fills half the screen on desktop, full on mobile */}
+      <div className="relative w-full md:w-1/2 h-[320px] md:h-auto md:min-h-screen flex-shrink-0">
+        <img
+          src={portrait}
+          alt="Faisal Abdulkarim"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+      </div>
 
-          <div
-            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
-            onClick={() => setMenuOpen((prev) => !prev)}
+      {/* Right - Text */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-6 md:px-16 py-10 md:py-0 bg-[#ECCEC6]">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 text-black font-[Major_Mono_Display] leading-tight text-center md:text-left">
+          ABDULKARIM <br /> YUSUF <br /> FAISAL
+        </h1>
+        <h2
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-10 text-center md:text-left"
+          style={{ fontFamily: "'Red Hat Display', sans-serif" }}
+        >
+          FILM MAKER <br /> CINEMATOGRAPHER
+        </h2>
+
+        <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md items-center md:items-start">
+          <a
+            href="#projects"
+            className="w-full sm:w-auto border border-black text-black py-4 px-8 rounded font-semibold text-lg transition duration-300 transform hover:scale-105 hover:bg-black hover:text-[#ECCEC6] text-center"
           >
-            &#9776;
-          </div>
-
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-             href="#home"
-             className="text-gray-800 hover:text-black transition-colors"
-             >
-              {""}
-              Home
-            </a>
-            <a 
-              href="#about" 
-              className="text-gray-800 hover:text-black transition-colors"
-            >
-               {""}
-                About{""}
-            </a>
-            <a 
-            href="#projects" 
-            className="text-gray-800 hover:text-black transition-colors"
-            >
-              {""}
-              Projects{""}
-            </a>
-            <a 
+            View Projects
+          </a>
+          <a
             href="#contact"
-            className="text-gray-800 hover:text-black transition-colors"
-            >
-              {""}
-              Contact{""}
-            </a>
-          </div>
+            className="w-full sm:w-auto border border-black text-black py-4 px-8 rounded font-semibold text-lg transition duration-300 transform hover:scale-105 hover:bg-black hover:text-[#ECCEC6] text-center"
+          >
+            Contact Me
+          </a>
         </div>
       </div>
-    </nav>
+    </section>
   );
 };
