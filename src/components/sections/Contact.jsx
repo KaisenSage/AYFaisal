@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { FaLinkedin, FaInstagram, FaPhone } from "react-icons/fa";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -37,6 +38,33 @@ export const Contact = () => {
         >
           Get In Touch
         </h2>
+
+        {/* Social and Phone Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <a
+            href="https://www.linkedin.com/in/faisal-abdulkarim-yusuf-54652523b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#eccec6] text-[#232323] border border-[#eccec6] rounded px-4 py-2 font-medium hover:bg-[#232323] hover:text-[#eccec6] transition"
+          >
+            <FaLinkedin size={20} /> LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/thereal.oneofone/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#eccec6] text-[#232323] border border-[#eccec6] rounded px-4 py-2 font-medium hover:bg-[#232323] hover:text-[#eccec6] transition"
+          >
+            <FaInstagram size={20} /> Instagram
+          </a>
+          <a
+            href="tel:+2347085708379"
+            className="flex items-center gap-2 bg-[#eccec6] text-[#232323] border border-[#eccec6] rounded px-4 py-2 font-medium hover:bg-[#232323] hover:text-[#eccec6] transition"
+          >
+            <FaPhone size={20} /> +234 708 570 8379
+          </a>
+        </div>
+
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
             <input
