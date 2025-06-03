@@ -19,7 +19,7 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then(() => {
-        alert("Message Sent!");
+        alert("Your message was sent successfully! I’ll be in touch soon.");
         setFormData({ name: "", email: "", message: "" });
       })
       .catch(() => alert("Oops! Something went wrong. Please try again."));
