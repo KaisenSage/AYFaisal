@@ -5,7 +5,7 @@ export const Footer = () => (
     <div className="flex flex-col items-center px-3 py-2 w-full
       sm:flex-row sm:justify-between sm:items-center">
       <span className="text-[#eccec6] text-xs text-center sm:text-left sm:text-sm font-medium">
-        © {new Date().getFullYear()} . All rights reserved.
+        © {new Date().getFullYear()} Sagecorp Development Services. All rights reserved.
       </span>
       <span className="text-[#eccec6] text-xs text-center sm:text-right sm:text-sm">
         Designed &amp; built by Sagecorp Development Services
