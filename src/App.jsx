@@ -28,6 +28,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Copyright />
       </div>
     </>
   );
