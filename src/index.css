@@ -1,3 +1,4 @@
+/* index.css */
 @import "tailwindcss";
 
 html,
@@ -11,16 +12,31 @@ body {
 
 @layer utilities {
   @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
   }
-  .animate-blink { animation: blink 0.8s step-end infinite; }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
 
   @keyframes loading {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(250%); }
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
   }
-  .animate-loading-bar { animation: loading 0.8s ease infinite; }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
 }
 
 .reveal {
@@ -28,40 +44,8 @@ body {
   transform: translateY(20px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
+
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Remove all side borders & padding, make all containers full width */
-html, body, #root {
-  background: #ECCEC6 !important;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  min-width: 100vw;
-  max-width: 100vw;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-/* Ensure all sections and main wrappers are edge-to-edge with no padding or border */
-section,
-main,
-.main-content-bg {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-}
-
-/* Footer: edge-to-edge, no padding or borders */
-footer {
-  background: #0a0a0a;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
 }
