@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="w-screen max-w-screen overflow-x-hidden relative min-h-screen w-screen flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
+      className="relative min-h-screen w-screen max-w-screen overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
       style={{ minHeight: "100vh" }}
     >
       {/* Left - Image, fills half the screen on desktop, full on mobile */}
