@@ -5,8 +5,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      // Fix: Use w-screen instead of w-full and remove ancestor max-widths for edge-to-edge background.
-      className="relative min-h-screen w-screen overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
+      className="relative min-h-screen w-full overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
       style={{ minHeight: "100vh" }}
     >
       {/* Left - Image */}

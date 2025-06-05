@@ -50,10 +50,15 @@ body {
   transform: translateY(0);
 }
 html, body, #root {
+  background: #ECCEC6 !important;
   margin: 0;
   padding: 0;
   width: 100vw;
   min-width: 100vw;
   max-width: 100vw;
   overflow-x: hidden;
+}
+footer {
+  background: #0a0a0a; /* or your chosen color */
+  width: 98vw;
 }
