@@ -38,7 +38,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className=" w-screen max-w-screen overflow-x-hidden min-h-screen w-screen flex flex-col items-center justify-center py-16 bg-[#e9d7d2]"
+      className="min-h-screen w-screen flex flex-col items-center justify-center py-16 bg-[#e9d7d2]"
       ref={containerRef}
     >
       <div className="w-full max-w-6xl px-4 sm:px-8 mx-auto">

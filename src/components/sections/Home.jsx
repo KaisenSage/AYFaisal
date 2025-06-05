@@ -5,17 +5,16 @@ export const Home = () => {
   return (
     <section
       id="home"
-      // Only outermost container uses w-screen and overflow-x-hidden!
-      className="relative min-h-screen w-full overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
+      // Fix: Use w-screen instead of w-full and remove ancestor max-widths for edge-to-edge background.
+      className="relative min-h-screen w-screen overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
       style={{ minHeight: "100vh" }}
     >
-      {/* Left - Image, fills half the screen on desktop, full on mobile */}
+      {/* Left - Image */}
       <div className="relative w-full md:w-1/2 h-[320px] md:h-auto md:min-h-screen flex-shrink-0 overflow-hidden">
         <img
           src={portrait}
           alt="Faisal Abdulkarim"
           className="absolute inset-0 w-full h-full object-cover object-center"
-          draggable={false}
         />
       </div>
 
