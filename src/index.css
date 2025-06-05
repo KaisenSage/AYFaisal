@@ -1,3 +1,4 @@
+/* index.css */
 @import "tailwindcss";
 
 html,
@@ -7,12 +8,6 @@ body {
   font-family: "Space Grotesk", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
-  overflow-x: hidden; /* Prevents horizontal scroll */
-}
-
-/* Make all <section> elements hide horizontal overflow only */
-section {
-  overflow-x: hidden !important;
 }
 
 @layer utilities {
@@ -54,9 +49,3 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* DO NOT include this! It will bring back the horizontal scroll:
-html, body {
-  overflow-x: auto;
-}
-*/
