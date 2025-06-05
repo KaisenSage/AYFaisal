@@ -6,6 +6,7 @@ export const About = () => {
       id="about"
       className="min-h-screen w-screen flex flex-col items-center py-16 bg-[#232323]"
     >
+      
       <div className="w-full max-w-4xl px-4 sm:px-8 mx-auto">
         {/* BIO SECTION */}
         <div className="flex flex-col md:flex-row border-t border-gray-600 pt-8 pb-8">
