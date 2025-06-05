@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen w-screen flex flex-col items-center py-16 bg-[#232323]"
+      className=" w-screen max-w-screen overflow-x-hidden min-h-screen w-screen flex flex-col items-center py-16 bg-[#232323]"
     >
       <div className="w-full max-w-4xl px-4 sm:px-8 mx-auto">
         {/* BIO SECTION */}

@@ -29,7 +29,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen w-screen flex items-center justify-center py-16 bg-[#232323]"
+      className=" w-screen max-w-screen overflow-x-hidden min-h-screen w-screen flex items-center justify-center py-16 bg-[#232323]"
     >
       <div className="w-full max-w-lg sm:max-w-xl px-4 sm:px-8 mx-auto">
         <h2
