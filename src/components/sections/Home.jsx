@@ -5,15 +5,17 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-screen max-w-screen overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
+      // Only outermost container uses w-screen and overflow-x-hidden!
+      className="relative min-h-screen w-full overflow-x-hidden flex flex-col md:flex-row bg-[#ECCEC6] pt-16"
       style={{ minHeight: "100vh" }}
     >
       {/* Left - Image, fills half the screen on desktop, full on mobile */}
-      <div className="relative w-full md:w-1/2 h-[320px] md:h-auto md:min-h-screen flex-shrink-0">
+      <div className="relative w-full md:w-1/2 h-[320px] md:h-auto md:min-h-screen flex-shrink-0 overflow-hidden">
         <img
           src={portrait}
           alt="Faisal Abdulkarim"
           className="absolute inset-0 w-full h-full object-cover object-center"
+          draggable={false}
         />
       </div>
 
